@@ -66,7 +66,7 @@ func main() {
 
 	e.GET("/hello", helloHandler)
 	e.GET("/todos", todoHandler)
-	e.GET("/todos/:id", todoHandler)
+	e.GET("/todos/:id", getTodoHandlerByid)
 	e.POST("/todos", createTodoHandler)
 
 	port := os.Getenv("PORT")
