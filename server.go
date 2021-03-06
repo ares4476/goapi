@@ -16,7 +16,10 @@ type todo struct {
 }
 
 var totos = map[int]*todo{
-	1: &todo{ID: 1, Title: "pay phone bill", Status: "active"},
+	1: &todo{ID: 1, Title: "pay phone bill1", Status: "active"},
+	2: &todo{ID: 2, Title: "pay phone bill2", Status: "active"},
+	3: &todo{ID: 3, Title: "pay phone bill3", Status: "active"},
+	4: &todo{ID: 4, Title: "pay phone bill4", Status: "active"},
 }
 
 func todoHandler(c echo.Context) error {
